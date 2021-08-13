@@ -14,11 +14,11 @@
 		DEABBDE326C68691005425F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEABBDE226C68691005425F9 /* Assets.xcassets */; };
 		DEABBDE626C68691005425F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEABBDE426C68691005425F9 /* LaunchScreen.storyboard */; };
 		DEABBE8726C68B28005425F9 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEABBE8626C68B28005425F9 /* Calculator.swift */; };
-		DEABBE9726C68CA8005425F9 /* CalculatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEABBDF026C68691005425F9 /* CalculatorSpec.swift */; };
+		DEE5C04F26C6936F00E2A7E7 /* CalculatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEABBDF026C68691005425F9 /* CalculatorSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DEABBE9226C68C9C005425F9 /* PBXContainerItemProxy */ = {
+		DEE5C04A26C6936200E2A7E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DEABBDCE26C6868D005425F9 /* Project object */;
 			proxyType = 1;
@@ -41,7 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DEABBDD626C6868D005425F9 /* TestCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TestCI.app; path = "/Users/mykola_zhurba/Desktop/TestCI/build/Debug-iphoneos/TestCI.app"; sourceTree = "<absolute>"; };
 		DEABBDD926C6868D005425F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEABBDDB26C6868D005425F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DEABBDDD26C6868D005425F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +50,9 @@
 		DEABBDE726C68691005425F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEABBDF026C68691005425F9 /* CalculatorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorSpec.swift; sourceTree = "<group>"; };
 		DEABBE8626C68B28005425F9 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
-		DEABBE8D26C68C9C005425F9 /* TestCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TestCITests.xctest; path = "/Users/mykola_zhurba/Desktop/TestCI/build/Debug-iphoneos/TestCITests.xctest"; sourceTree = "<absolute>"; };
+		DEE5C03F26C6930600E2A7E7 /* TestCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE5C04526C6936200E2A7E7 /* TestCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE5C04926C6936200E2A7E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +63,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEABBE8A26C68C9C005425F9 /* Frameworks */ = {
+		DEE5C04226C6936200E2A7E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,6 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				DEABBDD826C6868D005425F9 /* TestCI */,
+				DEE5C04526C6936200E2A7E7 /* TestCITests.xctest */,
+				DEE5C03F26C6930600E2A7E7 /* TestCI.app */,
+				DEE5C04626C6936200E2A7E7 /* TestCITests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,9 +102,17 @@
 		DEABBE0926C6870D005425F9 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				DEABBDF026C68691005425F9 /* CalculatorSpec.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		DEE5C04626C6936200E2A7E7 /* TestCITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEABBDF026C68691005425F9 /* CalculatorSpec.swift */,
+				DEE5C04926C6936200E2A7E7 /* Info.plist */,
+			);
+			path = TestCITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,25 +133,25 @@
 			);
 			name = TestCI;
 			productName = TestCI;
-			productReference = DEABBDD626C6868D005425F9 /* TestCI.app */;
+			productReference = DEE5C03F26C6930600E2A7E7 /* TestCI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DEABBE8C26C68C9C005425F9 /* TestCITests */ = {
+		DEE5C04426C6936200E2A7E7 /* TestCITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEABBE9426C68C9C005425F9 /* Build configuration list for PBXNativeTarget "TestCITests" */;
+			buildConfigurationList = DEE5C04C26C6936200E2A7E7 /* Build configuration list for PBXNativeTarget "TestCITests" */;
 			buildPhases = (
-				DEABBE8926C68C9C005425F9 /* Sources */,
-				DEABBE8A26C68C9C005425F9 /* Frameworks */,
-				DEABBE8B26C68C9C005425F9 /* Resources */,
+				DEE5C04126C6936200E2A7E7 /* Sources */,
+				DEE5C04226C6936200E2A7E7 /* Frameworks */,
+				DEE5C04326C6936200E2A7E7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DEABBE9326C68C9C005425F9 /* PBXTargetDependency */,
+				DEE5C04B26C6936200E2A7E7 /* PBXTargetDependency */,
 			);
 			name = TestCITests;
 			productName = TestCITests;
-			productReference = DEABBE8D26C68C9C005425F9 /* TestCITests.xctest */;
+			productReference = DEE5C04526C6936200E2A7E7 /* TestCITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +166,7 @@
 					DEABBDD526C6868D005425F9 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					DEABBE8C26C68C9C005425F9 = {
+					DEE5C04426C6936200E2A7E7 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = DEABBDD526C6868D005425F9;
 					};
@@ -174,7 +186,7 @@
 			projectRoot = "";
 			targets = (
 				DEABBDD526C6868D005425F9 /* TestCI */,
-				DEABBE8C26C68C9C005425F9 /* TestCITests */,
+				DEE5C04426C6936200E2A7E7 /* TestCITests */,
 			);
 		};
 /* End PBXProject section */
@@ -190,7 +202,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEABBE8B26C68C9C005425F9 /* Resources */ = {
+		DEE5C04326C6936200E2A7E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,21 +223,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEABBE8926C68C9C005425F9 /* Sources */ = {
+		DEE5C04126C6936200E2A7E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEABBE9726C68CA8005425F9 /* CalculatorSpec.swift in Sources */,
+				DEE5C04F26C6936F00E2A7E7 /* CalculatorSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DEABBE9326C68C9C005425F9 /* PBXTargetDependency */ = {
+		DEE5C04B26C6936200E2A7E7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DEABBDD526C6868D005425F9 /* TestCI */;
-			targetProxy = DEABBE9226C68C9C005425F9 /* PBXContainerItemProxy */;
+			targetProxy = DEE5C04A26C6936200E2A7E7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -403,7 +415,7 @@
 			};
 			name = Release;
 		};
-		DEABBE9526C68C9C005425F9 /* Debug */ = {
+		DEE5C04D26C6936200E2A7E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -423,7 +435,7 @@
 			};
 			name = Debug;
 		};
-		DEABBE9626C68C9C005425F9 /* Release */ = {
+		DEE5C04E26C6936200E2A7E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,11 +476,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEABBE9426C68C9C005425F9 /* Build configuration list for PBXNativeTarget "TestCITests" */ = {
+		DEE5C04C26C6936200E2A7E7 /* Build configuration list for PBXNativeTarget "TestCITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEABBE9526C68C9C005425F9 /* Debug */,
-				DEABBE9626C68C9C005425F9 /* Release */,
+				DEE5C04D26C6936200E2A7E7 /* Debug */,
+				DEE5C04E26C6936200E2A7E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
