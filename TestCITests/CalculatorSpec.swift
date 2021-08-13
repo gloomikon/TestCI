@@ -46,9 +46,4 @@ class CalculatorSpec: XCTestCase {
         let result = calculator.divide(a: 5, b: 2)
         XCTAssertEqual(result, 2.5)
     }
-
-    func testWrongResult() throws {
-        let result = calculator.divide(a: 5, b: 2)
-        XCTAssertEqual(result, 1)
-    }
 }
