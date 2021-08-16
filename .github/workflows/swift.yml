@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@master
       - name: Prestart
         run: |
-          xcrun instruments -w "iPhone 11 Pro (13.3) [" || true
+          xcrun instruments -w "iPhone 11 Pro Max (13.2.2) [" || true
       - name: Build
         run: |
           xcodebuild clean build -project TestCI.xcodeproj -scheme "TestCI" -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
